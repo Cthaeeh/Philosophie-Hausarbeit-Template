@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage[onehalfspacing]{setspace}
+\usepackage[a4paper,left=2.5cm, right=3cm,top=2.5cm,bottom=2cm]{geometry}
+\usepackage[german=quotes]{csquotes}
+% footnote size
+\renewcommand{\footnotesize}{\fontsize{10pt}{11pt}\selectfont}
+% align footnotes with text
+\usepackage[flushmargin]{footmisc}
+\usepackage{myTitle}
+\usepackage{myHonesty}
+
+\title{Thales 123}
+\author{Max Mustermann}
+\date{30.09.2021}
+\dozent{Dr. Steve Arlinger}
+\semester{SoSe 2021}
+\seminar{Thales von Milet}
+\matrikelnumber{1111111}
+\studiengang{Philosophie (Nebenfach: Wiwi)}
+\mail{max.mustermann@stud-mail.uni-wuerzburg.de}
+\RLAdress{Sesamstrasse 13 01543 Bielefeld}
+\fachsemester{9}
+\begin{document}
+\maketitle
+\makehonesty
+\tableofcontents
+\newpage
+
+\input{body}
+
+\end{document}

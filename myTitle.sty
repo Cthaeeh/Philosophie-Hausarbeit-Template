@@ -1,0 +1,48 @@
+
+\ProvidesPackage{myTitle}[test]
+
+\newcommand*{\semester}[1]{\gdef\@semester{#1}}
+\newcommand*{\@semester}{\texttt{\string\semester} currently not set. Please fix this.}
+\newcommand*{\dozent}[1]{\gdef\@dozent{#1}}
+\newcommand*{\@dozent}{\texttt{\string\dozent} currently not set. Please fix this.}
+\newcommand*{\seminar}[1]{\gdef\@seminar{#1}}
+\newcommand*{\@seminar}{\texttt{\string\seminar} currently not set. Please fix this.}
+\newcommand*{\matrikelnumber}[1]{\gdef\@matrikelnumber{#1}}
+\newcommand*{\@matrikelnumber}{\texttt{\string\matrikelnumber} currently not set. Please fix this.}
+
+\newcommand*{\studiengang}[1]{\gdef\@studiengang{#1}}
+\newcommand*{\@studiengang}{\texttt{\string\studiengang} currently not set. Please fix this.}
+
+\newcommand*{\mail}[1]{\gdef\@mail{#1}}
+\newcommand*{\@mail}{\texttt{\string\mail} currently not set. Please fix this.}
+
+\newcommand*{\RLAdress}[1]{\gdef\@RLAdress{#1}}
+\newcommand*{\@RLAdress}{\texttt{\string\RLAdress} currently not set. Please fix this.}
+
+\newcommand*{\fachsemester}[1]{\gdef\@fachsemester{#1}}
+\newcommand*{\@fachsemester}{\texttt{\string\fachsemester} currently not set. Please fix this.}
+
+
+\renewcommand*{\maketitle}{%
+
+{\centering
+{\large Hausarbeit im \@semester\unskip\strut\par}
+{\large am Institut für Philosophie der Julius-Maximilians-Universität zum Seminar}
+{\large \@seminar\unskip\strut\par}
+{\large bei \@dozent\unskip\strut\par}
+\vspace{6cm}
+{\Huge  \bfseries\@title\unskip\strut\par}
+\vspace{8cm}
+{\large vorgelegt von \@author\unskip\strut\par}
+{\large Matrikelnummer: \@matrikelnumber \par}
+{\large \@studiengang }
+{\large Fachsemester: \@fachsemester\par}
+{\large E-Mail-Addresse: \@mail\par}
+{\large Adresse: \@RLAdress\par}
+{\large vorgelegt am: \@date\par}
+\newpage
+}
+
+
+}
+\endinput
